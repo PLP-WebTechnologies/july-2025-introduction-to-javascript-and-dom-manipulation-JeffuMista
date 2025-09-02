@@ -11,8 +11,8 @@ const recommendedMoviesSection = document.getElementById("recommended-movies");
 
 //function to add movies to the list
 mainBtn.addEventListener("click", function() {
-    newMovies.forEach(function(movie) {
-        const li = document.createElement("li");
+    newMovies.forEach(function(movie) { //For...each loop to iterate through the array
+        const li = document.createElement("li"); // Create new list item
         li.textContent = movie;
         movieList.appendChild(li);
     });
@@ -26,14 +26,14 @@ function addRecommendation() {
         recommendInput.value = ""; // Clear input field
 
         recommendedList.innerHTML = ""; // Clear existing list
-        for (const film of recommendedMovies) {
-        const newRecommendation = document.createElement("li");
+        for (const film of recommendedMovies) { //For...of loop to iterate through the array
+        const newRecommendation = document.createElement("li");// Create new list item
         newRecommendation.textContent = film;  
         recommendedList.appendChild(newRecommendation);
         recommendedMoviesSection.style.display = "block"; // Ensure the list is visible
         }
     } else {
-        alert("Please enter a movie name.");
+        alert("Please enter a movie name."); // Alert if input is empty or duplicate
     }   
 }
 
