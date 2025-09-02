@@ -1,0 +1,74 @@
+body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+h1 {
+     margin-bottom: 20px;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+li {
+    margin: 5px 0;
+    list-style: square;
+}
+#main-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+button:hover {
+    background: #005fa3;
+}
+#recommend-section {
+    margin-top: 30px;
+    text-align: center;
+}
+#recommended-movies {
+    margin-top: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    width: 300px;
+    text-align: center;
+    display: none; /* Hidden by default */
+}
+#recommend-input {
+    width: 80%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+#recommend-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+#recommend-btn:hover {
+    background: #218838;
+}
+#recommended-movies h2 {
+    margin-bottom: 10px;
+}
+#recommend-list {
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+}

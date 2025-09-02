@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Blockbuster Movies</title>
+</head>
+<body>
+    <h1>Top Blockbuster Movies</h1>
+    <ul id="movie-list">
+        <li>Avatar</li>
+        <li>Avengers: Endgame</li>
+        <li>Titanic</li>
+        <li>Jurassic World</li>
+        <li>The Lion King</li>
+    </ul>
+    <button id="main-btn">Show More Movies</button>
+    <!-- Recommend a Movie Input Field -->
+    <div id="recommend-section">
+        <input type="text" id="recommend-input" placeholder="Recommend a movie..." />
+        <button id="recommend-btn">Add Movie</button>
+        <div id="recommended-movies">
+            <h2>Recommended Movies:</h2>
+            <ul id="recommend-list">
+                <!-- New recommendations will appear here -->
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
